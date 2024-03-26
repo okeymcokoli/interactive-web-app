@@ -64,7 +64,7 @@ kubectl describe svc
 ####PS: If you can't access the NodePort service webapp with MinikubeIP:NodePort, execute the following command:
 
 ```
-minkube service webapp-service
+minikube service webapp-service
 ```
 
 10. stop minikube cluster
