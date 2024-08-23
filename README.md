@@ -1,8 +1,6 @@
 # interactive-web-app
 how to deploy a web application with its database on local Kubernetes cluster
 
-how to deploy a web application with its database into a local Kubernetes cluster
-
 This repository contains a simple step for deploying an interractive web application with MongoDB using docker, minikube, and kubernetes on your localhost with port 3000 exposed.  
 
 ## Table of Contents
@@ -41,7 +39,7 @@ minikube version
 6. Configure the following files to suite your environment or use as provided.
 
     a. mongo-config.yaml
-    b. mongo-secret.yaml
+    b. mongo-secret.yaml <for your mongouser on your terminal, echo -n mongouser | base64 and for your mongopassword, echo -n mongopassword | base64 and copy and paste values into your secret.yaml>
     c. mongo.yaml
     d. webapp.yaml
 
