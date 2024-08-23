@@ -54,9 +54,31 @@ minikube status
 minikube ip
 kubectl describe svc
 ```
+9. Create your resources.
+    a. 
+    ```
+    kubectl aaply -f mongo-config.yaml
+    ```
+    b. 
+    ```
+    kubectl apply -f mongo-secret.yaml
+    ```
+    c. 
+    ```
+    kubectl apply -f mongo.yaml
+    ```
+    d. 
+        ```
+    kubectl apply -f webapp.yaml
+    ```
+10. Verify all services are created successfuly.
+
+```
+kubectl get all
+```
 
 ### Endpoints
-9. access your application using minikubeIP:NodePort http://http://10.244.0.15:3000
+11. access your application using minikubeIP:NodePort http://http://10.244.0.15:3000
 
 
 ####PS: If you can't access the NodePort service webapp with MinikubeIP:NodePort, execute the following command:
@@ -65,13 +87,13 @@ kubectl describe svc
 minikube service webapp-service
 ```
 
-10. stop minikube cluster
+12. stop minikube cluster
 ```
 minikube stop
 ```
 
 ### Credits
-11. Big shoutout to Nana Janashia and Adekunle Flourish whose insights and codes were curled for this project
+13. Big shoutout to Nana Janashia and Adekunle Flourish whose insights and codes were curled for this project
 
 ## Contributing
 Contributions are welcome! Feel free to open issues, submit pull requests, or provide suggestions to improve this project.
