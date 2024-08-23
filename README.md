@@ -68,7 +68,7 @@ kubectl describe svc
     kubectl apply -f mongo.yaml
     ```
     d. 
-        ```
+    ```
     kubectl apply -f webapp.yaml
     ```
 10. Verify all services are created successfuly.
